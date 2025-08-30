@@ -115,7 +115,7 @@ if (shirtPrice >= 1000 && haveCupoon === true) {
 
 //Else-if
 
-const bill = 6000;
+let bill = 6000;
 if (bill >= 6000) {
   const discount = (bill / 100) * 15;
   const payBill = bill - discount;
@@ -128,3 +128,80 @@ if (bill >= 6000) {
   console.log("Paybil", bill);
 }
 
+const minAgeLim = 12;
+const maxAgeLim = 60;
+let ageNow = 70;
+if (minAgeLim >= ageNow) {
+  console.log("You dont have to pay bill, its on House");
+} else if (maxAgeLim <= ageNow) {
+  console.log("You have 50% discount from house");
+} else {
+  console.log("Pay Your Bill Please");
+}
+
+//Output- You have 50% discount from house
+
+const minBankBalance = 1000;
+const safeBanklimite = 5000;
+let ballance = 6000;
+const compare1 = minBankBalance <= ballance;
+const compare2 = safeBanklimite >= ballance;
+if (minBankBalance >= ballance) {
+  console.log("Deposite Money");
+} else if (compare1 && compare2) {
+  console.log("Bindaas chill & Relax");
+} else {
+  //if (ballance > safeBanklimite)
+  console.log("You are rich, get married");
+}
+
+//output - You are rich, get married
+
+const passMark = 50;
+const APlus = 80;
+const achivedMark = 79;
+if (APlus < achivedMark) {
+  console.log("You got A+");
+} else if (achivedMark >= passMark && APlus > achivedMark) {
+  console.log("Passed");
+} else {
+  console.log("Fail");
+}
+//output - Passed
+
+let bookSize = 501;
+const smallSizeBook = 100;
+const bigSizeBook = 500;
+const midSizeBook = smallSizeBook < bookSize && bigSizeBook < bookSize;
+
+if (bookSize <= smallSizeBook) {
+  console.log("Small Size Book");
+} else if (bookSize >= bigSizeBook) {
+  console.log("Big Book");
+} else {
+  console.log("Mid Size book");
+}
+
+//Output - Big Book
+
+let tampa = -1;
+if (tampa > 0 && tampa < 20) {
+  console.log("Cool COOL");
+} else if (tampa <= 0) {
+  console.log("ICE");
+} else {
+  console.log("HOT HOT");
+}
+
+//putput - ICE
+
+let playeLvl = 50;
+if (playeLvl < 10) {
+  console.log("Novice");
+} else if (playeLvl >= 50) {
+  console.log("Expart");
+} else {
+  console.log("Pro Gamer");
+}
+
+//output - 

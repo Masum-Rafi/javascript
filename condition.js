@@ -52,9 +52,79 @@ const age = 27;
 const workexp = 3;
 const maxAge = 30;
 const minWorkexp = 2;
-if (maxAge < age && minWorkexp > workexp){
-   console.log("You are qualified for job exm")
+if (maxAge >= age && minWorkexp <= workexp) {
+  console.log("You are qualified for job exm");
 } else {
-   console.log("You are not qualified for this");
+  console.log("You are not qualified for this");
 }
-//not solved yet
+
+//output - You are qualified for job exm
+
+const minEggCount = 12;
+const eggInFridge = 7;
+const chickenAvl = true;
+if (minEggCount == eggInFridge || chickenAvl == true) {
+  console.log("Dim korma is on");
+} else {
+  console.log("Ruti kola maro ar ghumao");
+}
+
+//Output - Dim korma is on
+
+const bodyTamp = 95;
+const haveCough = false;
+const fevar = 100;
+if (bodyTamp >= fevar || haveCough == true) {
+  console.log("Imidiatly visiting to Doctor");
+} else {
+  console.log("Got Coverd in Blanket ");
+}
+//Output - Got Coverd in Blanket
+
+let attendance = "70%";
+const minAttendance = "80%";
+const hwSubmited = true;
+if (attendance >= minAttendance && hwSubmited === true) {
+  console.log("You Can sit for examination");
+} else {
+  console.log("You did'nt maintain your pace");
+}
+
+//output - You are not maintain your pace
+
+let electricity = "gone";
+let phn = "dead";
+const doing1 = "gameing is on";
+const doing2 = "Reading is on";
+if (electricity != "on" && phn != "on") {
+  console.log(doing1);
+} else {
+  console.log(doing2);
+}
+
+//output - gameing is on
+
+const shirtPrice = 999;
+const haveCupoon = true;
+if (shirtPrice >= 1000 && haveCupoon === true) {
+  console.log("You got 20% Discount");
+} else {
+  console.log("You did'nt got Discount ");
+}
+//output - You did'nt got Discount
+
+//Else-if
+
+const bill = 6000;
+if (bill >= 6000) {
+  const discount = (bill / 100) * 15;
+  const payBill = bill - discount;
+  console.log("Your Got 15% discount, Bill is", payBill);
+} else if (bill >= 3000) {
+  const discount2 = (bill / 100) * 5;
+  const payBill2 = bill - discount2;
+  console.log("You got 5% discount, Pay Bill", payBill2);
+} else {
+  console.log("Paybil", bill);
+}
+

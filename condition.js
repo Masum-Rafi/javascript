@@ -278,7 +278,7 @@ if (giftCount == partyGusts) {
 
 // output - I will party with myself
 
-//logical not (!)
+//logical not (!) and 
 
 const isLeader = true;
 if (isLeader) {
@@ -328,7 +328,8 @@ sunny == 0 ? console.log("Stay Home") : 0;
 
 //output - null
 
-let expensive = false;
-expensive == 0
+let expensive = true;
+!expensive == 0
   ? console.log("I will buy this item")
   : console.log("im not buying it");
+  //output - I will buy this item

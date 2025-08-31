@@ -204,4 +204,79 @@ if (playeLvl < 10) {
   console.log("Pro Gamer");
 }
 
-//output - 
+//output - Expart
+
+//Nested If condition
+
+const invitation = true;
+const money = 900;
+if (invitation == true){
+  console.log("Going to Friends Bparty");
+  if(money > 1000) {
+    console.log("Lets Buy a gift for him");
+  } else if(money<1000) {
+    console.log("Going without Gifts");
+  }
+} else {
+  console.log("You are not my friend anymore");
+}
+
+//output - Going to Friends Bparty, Going without Gifts
+
+const gustWantTea = true;
+const gustWantBiscute = false;
+if(gustWantTea == true){
+  console.log("do you want Biscute Also");
+  if (gustWantBiscute == true){
+  console.log("Tea & Biscute Ready");
+  } else if (gustWantTea == true){
+    console.log("Only tea is ready");
+  }
+} else {
+console.log("Sit and watch star Jalsha")
+}
+//output - Only tea is ready;
+
+const ActiveUser = true;
+const subscribtion = true;
+if (ActiveUser == true){
+  console.log("Active User");
+  if(subscribtion == true){
+    console.log("You are Using Premium Feature");
+  }else if (subscribtion == false){
+    console.log("You are using Free version");
+  }
+} else {
+  console.log("User is Not Active");
+}
+
+//output - You are Using Premium Feature
+
+const foodInFridge = 0;
+const foodAppWorking = 1;
+if (foodInFridge == true){
+  console.log("Food Available in fridge");
+  console.log("Lets Microwave it and enjoy")
+ 
+} else {
+  if (foodAppWorking == true){
+    console.log("Lets Order Food online");
+  } else {
+  console.log("Im fasting Today")
+  }
+}
+
+//Output - Lets Order Food Online
+
+let partyGusts = 100;
+let giftCount = 70;
+if (giftCount == partyGusts){
+  if(partyGusts >= 100) {
+  console.log("Guest Count is fullfill");
+  console.log("Lets party All night");
+  }
+}else {
+    console.log("I will party with myself");
+}
+
+// output - I will party with myself

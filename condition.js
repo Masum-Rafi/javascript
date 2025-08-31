@@ -7,21 +7,19 @@ console.log("New bike");
 
 const show = "9pm";
 const nextShow = "10pm";
-if (show <= nextShow){
-   console.log("its movie time");
+if (show <= nextShow) {
+  console.log("its movie time");
 } else {
-   console.log("only Sleep");
+  console.log("only Sleep");
 }
-
 
 const tamparaturelimit = 30;
 const tamparatureNow = 32;
 if (tamparatureNow >= tamparaturelimit) {
-   console.log("Ac On");
+  console.log("Ac On");
 } else {
-   console.log("Blanket on my body");
+  console.log("Blanket on my body");
 }
-
 
 //AND & OR condition
 const ageM = 25;
@@ -42,10 +40,10 @@ if (mathScore > 80 || englishScore > 85) {
 
 const GPA = 5;
 const monthlyEarning = 12000;
-if(GPA == 5 && monthlyEarning <= 10000 ){
-   console.log("You got the scholership")
+if (GPA == 5 && monthlyEarning <= 10000) {
+  console.log("You got the scholership");
 } else {
-   console.log("You are not qualified");
+  console.log("You are not qualified");
 }
 
 const age = 27;
@@ -210,11 +208,11 @@ if (playeLvl < 10) {
 
 const invitation = true;
 const money = 900;
-if (invitation == true){
+if (invitation == true) {
   console.log("Going to Friends Bparty");
-  if(money > 1000) {
+  if (money > 1000) {
     console.log("Lets Buy a gift for him");
-  } else if(money<1000) {
+  } else if (money < 1000) {
     console.log("Going without Gifts");
   }
 } else {
@@ -225,25 +223,25 @@ if (invitation == true){
 
 const gustWantTea = true;
 const gustWantBiscute = false;
-if(gustWantTea == true){
+if (gustWantTea == true) {
   console.log("do you want Biscute Also");
-  if (gustWantBiscute == true){
-  console.log("Tea & Biscute Ready");
-  } else if (gustWantTea == true){
+  if (gustWantBiscute == true) {
+    console.log("Tea & Biscute Ready");
+  } else if (gustWantTea == true) {
     console.log("Only tea is ready");
   }
 } else {
-console.log("Sit and watch star Jalsha")
+  console.log("Sit and watch star Jalsha");
 }
 //output - Only tea is ready;
 
 const ActiveUser = true;
 const subscribtion = true;
-if (ActiveUser == true){
+if (ActiveUser == true) {
   console.log("Active User");
-  if(subscribtion == true){
+  if (subscribtion == true) {
     console.log("You are Using Premium Feature");
-  }else if (subscribtion == false){
+  } else if (subscribtion == false) {
     console.log("You are using Free version");
   }
 } else {
@@ -254,15 +252,14 @@ if (ActiveUser == true){
 
 const foodInFridge = 0;
 const foodAppWorking = 1;
-if (foodInFridge == true){
+if (foodInFridge == true) {
   console.log("Food Available in fridge");
-  console.log("Lets Microwave it and enjoy")
- 
+  console.log("Lets Microwave it and enjoy");
 } else {
-  if (foodAppWorking == true){
+  if (foodAppWorking == true) {
     console.log("Lets Order Food online");
   } else {
-  console.log("Im fasting Today")
+    console.log("Im fasting Today");
   }
 }
 
@@ -270,13 +267,68 @@ if (foodInFridge == true){
 
 let partyGusts = 100;
 let giftCount = 70;
-if (giftCount == partyGusts){
-  if(partyGusts >= 100) {
-  console.log("Guest Count is fullfill");
-  console.log("Lets party All night");
+if (giftCount == partyGusts) {
+  if (partyGusts >= 100) {
+    console.log("Guest Count is fullfill");
+    console.log("Lets party All night");
   }
-}else {
-    console.log("I will party with myself");
+} else {
+  console.log("I will party with myself");
 }
 
 // output - I will party with myself
+
+//logical not (!)
+
+const isLeader = true;
+if (isLeader) {
+  console.log("Government money is my money");
+}
+
+let isPassed = false;
+if (!isPassed) {
+  console.log("Ajke khawa dawa bondho.");
+}
+
+const cashback = 500;
+let billF = 3000;
+billF >= 3000 ? console.log(billF - cashback) : console.log("paybill: ", billF);
+
+//output - 2500
+
+let ageT = 14;
+let lvl = "child";
+lvl = ageT >= 15 ? "teenager" : "Children";
+console.log(lvl);
+
+//output - child
+
+let isloggrdIn = 0;
+let message = "welcome back";
+message = isloggrdIn === true ? "Welcome back" : "Please Login";
+console.log(message);
+
+//output - Please Login
+
+let carTank = 1;
+let mSg = "ready for a long Drive";
+mSg = carTank > true ? "Ready for a long Drive" : "Fill the Tank";
+console.log(mSg);
+
+//output - Fill the Tank
+
+let pass = 0;
+let mssG = "";
+mssG = pass == true ? "Party time" : "Serious in next sem";
+console.log(mssG);
+//output - Serious in next sem
+
+const sunny = 1;
+sunny == 0 ? console.log("Stay Home") : 0;
+
+//output - null
+
+let expensive = false;
+expensive == 0
+  ? console.log("I will buy this item")
+  : console.log("im not buying it");

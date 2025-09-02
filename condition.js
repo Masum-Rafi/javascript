@@ -328,8 +328,37 @@ sunny == 0 ? console.log("Stay Home") : 0;
 
 //output - null
 
-let expensive = true;
-!expensive == 0
-  ? console.log("I will buy this item")
-  : console.log("im not buying it");
-  //output - I will buy this item
+// let expensive = true;
+// !expensive == 0
+//   ? console.log("I will buy this item")
+//   : console.log("im not buying it");
+//   //output - I will buy this item
+// 
+
+//Array problems
+
+  const array = [71,72,73,74,75,76,78,79]
+   console.log(array);
+
+
+const vagi = ["potato","onoion","eggplant","mula","carrot","tomato","dharosh","lauki","potol"];
+const productInbag = vagi.length;
+console.log(productInbag);
+
+//output - 9
+
+const favCinema = ["Dunkrik","How to train the dragon","shwsank redimption",];
+
+const oddNumber = [11,13,15,17,19,21,23,25,27,29]
+
+const penColorBesidesMe = ["Red","White","Black","SkyBlue"]
+const length2 = penColorBesidesMe.length;
+console.log(length2);
+
+//output - 4
+
+const citiName = ["Dhaka","London","kolkata","Kathmundu"]
+const length3 = citiName.length;
+console.log(length3)
+
+

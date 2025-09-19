@@ -363,6 +363,64 @@ console.log(length3)
 
 //Output - 4
 
+//Arrey -Index
+const numarry = [4,5,6,1,78,34,78];
+console.log(numarry[2]);
+console.log(numarry[6]);
 
+const friend = ["hafiz","Rahat","Munna","Makki","Tamjid","Ibrahim"]
+console.log(friend[3]);
+// Output - Makki
 
+const favbk=["Bela furobar agge","Peradoxical Sajid","Himu","The Most Dangerius game","Double Standerd"]
+console.log(favbk[4]);
 
+//output - Double Standerd
+
+const num1to10=[1,2,3,4,5,6,7,8,9,10]
+num1to10[6] = 40;
+console.log(num1to10);
+//output - [ 1,  2, 3, 4,  5, 6, 40, 8, 9, 10]
+
+const gameinmyphn = ["Free fire","PUBG","Candy Crush","Tample Run"]
+gameinmyphn[2] = "Subway surf";
+console.log(gameinmyphn);
+//output - [ 'Free fire', 'PUBG', 'Subway surf', 'Tample Run' ]
+
+const famMem = ["jhontu","montu","Jhontur bap","Montur Ma"]
+console.log(famMem[3]);
+//output - Montur Ma
+
+const bktlistCountry = ["Spain","Sweethzerland","IceLand","Nepal","Vutan","Srilanka","London"]
+console.log(bktlistCountry[4]);
+//output - Vutan
+
+const inMyTbl = ["pen","diary","Moneybag","Buds"]
+console.log(inMyTbl[7]);
+//output - Undefiend {end Of Index}
+
+//Push-Pop-Shift-Unshift
+const num1 = [10,20,30,40,50]
+num1.push(60);
+console.log(num1);
+// output-[ 10, 20, 30, 40, 50, 60 ]
+
+const names = ["Sajib","sagor","Sakib","sohel"]
+names.push("Sumoon");
+console.log(names);
+//[ 'Sajib', 'sagor', 'Sakib', 'sohel', 'Sumoon' ]
+
+const MyphnApp = ["Ginthub","Youtube","Google Doc","Duolingo"]
+MyphnApp.pop();
+console.log(MyphnApp);
+//[ 'Ginthub', 'Youtube', 'Google Doc' ]
+
+const newary = [24,36,48,60]
+newary.unshift(12);
+console.log(newary);
+//[ 12, 24, 36, 48, 60 ]
+
+const MyBook = ["Bela furobar agge","Peradoxical Sajid","Himu","The Most Dangerius game","Double Standerd"]
+MyBook.shift();
+console.log(MyBook);
+//Output - [ 'Peradoxical Sajid','Himu','The Most Dangerius game','Double Standerd']

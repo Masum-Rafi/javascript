@@ -361,4 +361,8 @@ const citiName = ["Dhaka","London","kolkata","Kathmundu"]
 const length3 = citiName.length;
 console.log(length3)
 
+//Output - 4
+
+
+
 

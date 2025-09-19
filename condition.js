@@ -424,3 +424,46 @@ const MyBook = ["Bela furobar agge","Peradoxical Sajid","Himu","The Most Dangeri
 MyBook.shift();
 console.log(MyBook);
 //Output - [ 'Peradoxical Sajid','Himu','The Most Dangerius game','Double Standerd']
+
+
+//include & indexof methode
+
+/* defrence between include and indexof is - if we want to justify an array is there a valu stored or not we can check is by include and it gives us result in true & false just simple as it,
+and indexof says whats the index position it holds in array, if its not tere its simplely return -1 as result.*/
+
+const fruits = ["Apple","Bannana","Mango","Lichi"]
+if (fruits.includes("Mango")){
+  console.log("Mengo is there")
+} else (
+  console.log("There is no mango,get on the tree")
+);
+
+//output - Mengo is there
+
+const nam2 = ["babul","alif","chothon"]
+const indexnum = nam2.indexOf("babul");
+console.log(indexnum);
+//Output - 0
+
+const frList = ["Rifat","Rimon","Hafiz","Lokman"]
+const indxloc = frList.indexOf("Lokman");
+console.log(indxloc);
+//output - 3
+
+const citys = ["Dhaka","Chittagong","Sylhet","rajshahi"]
+const checkarry = citys.includes("RajShahi");
+console.log(checkarry);
+//Output -false
+
+const problem = ["Bristi", "Megh", "DIGHI", "Borsha"]
+if (problem.includes("Bristi")){
+  console.log("I need Umberalla");
+} else {
+  console.log("no rain no pain");
+}
+// output - I need Umberalla
+
+const favgame = ["Football", "Cricket","Voliball"]
+const ckgame = favgame.includes("badminton");
+console.log(ckgame);
+// output  - false

@@ -108,3 +108,27 @@ while (n2<=15){
    n2++;
 }console.log("sum of the total:",sum1);
 
+let n3 = 1;
+let sumN34 = 0;
+while (n3 <= 50) {
+  console.log(n3);
+  sumN34 = sumN34 + n3;
+  n3++;
+}
+console.log("Sum of the number", sumN34);
+
+let n4 = 21;
+let sumn4 = 0;
+while (n4 <= 50) {
+  sumn4 = n4 + sumn4;
+  n4++;
+  console.log("sum of 21 to 50 is:", sumn4);
+}
+
+let n5 = 20;
+let sumn5 = 0;
+while (n5 <= 40) {
+  sumn5 = n5 + sumn5;
+  n5++;
+}
+console.log("Total Sum of  20 to 40:", sumn5);

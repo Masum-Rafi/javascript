@@ -132,3 +132,67 @@ while (n5 <= 40) {
   n5++;
 }
 console.log("Total Sum of  20 to 40:", sumn5);
+
+//for loop
+
+for(let n11= 1;n11 <=10;n11++){
+   console.log(n11);
+}
+
+for (let i=150;i<=170;i++){
+   console.log(i);
+}
+
+let sofi1 =0;
+for(let i1 = 31;i1<=58;i1++){
+   console.log(i1);
+   sofi1 = i1 + sofi1;
+} console.log("Sum of Students :",sofi1);
+
+let sumi2 = 0;
+for(let i = 25;i<75;i++){
+   sumi2 = i + sumi2;
+}console.log(sumi2);
+
+//ODD-Even Loop
+for(i=20;i<=50;i++){
+   if(i % 7 ==0 ){
+
+      console.log("The Output:",i);}
+}
+
+//2
+for(i=40;i<=80;i++){
+   if(i%5 == 0 && i%7==0){
+      console.log("The modules:",i);
+   }
+}
+//3
+let Sm = 0;
+for (i = 13; i<=40;i++){
+   if(i % 13 == 0){
+   Sm = i + Sm;
+   } 
+   
+}console.log("The sum is:",Sm);
+//Output - 78
+
+//4
+for (let i = 1; i<=50; i = i+4){
+console.log("the num is:",i);
+}
+
+//5
+for (let i = 0; i<=100; i ++){
+   if (i % 9==0 && i % 6==0){
+      console.log("The Divisible Is :",i);
+   }
+}
+
+//6
+let sm1 = 0;
+for(let i = 1; i<=50; i++){
+   if(i % 3==0 && i% 4==0){
+   sm1 += i;
+   } 
+} console.log("The sum of Divisible:",sm1);

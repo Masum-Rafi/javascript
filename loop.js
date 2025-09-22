@@ -196,3 +196,10 @@ for(let i = 1; i<=50; i++){
    sm1 += i;
    } 
 } console.log("The sum of Divisible:",sm1);
+
+//Loop Break
+for (let i = 0;i<=30;i++){
+   if(i>=15){
+      break;
+   } console.log(i);
+}

@@ -231,3 +231,119 @@ console.log(family.mother.age); //50
 let sumOfAge = family.father.age + family.mother.age;
 
 console.log(sumOfAge); //124
+
+//Object - Key & Values
+//----1
+const book ={
+  name : "Recharge Youre Down Battery",
+  writer : "Jhankar Mahbub",
+  price : "250TK",
+};
+
+const bookkeys = Object.keys(book);
+const bookValues = Object.values(book);
+
+console.log(bookkeys);
+console.log(bookValues);
+
+// Output - [ 'name', 'writer', 'price' ]
+// [ 'Recharge Youre Down Battery', 'Jhankar Mahbub', '250TK' ]
+
+//----2
+const articale = {
+  title: "Learning JS",
+  category : "Programing",
+};
+
+if ( "auther" in articale) {
+  console.log("auther exists");
+} else {
+  console.log("No auther Founded");
+};
+
+//----3
+const Laputa = {
+  brand: "dell",
+  model: "Inspiron",
+  price : 45000,
+}
+for (const key in Laputa) {
+  const value = Laputa[key]
+  console.log(key,value);
+};
+
+//----4
+const phone3 = {
+  brand : "Samsumg",
+  model: "S21",
+  price: 85000,
+};
+
+for (const key of Object.keys(phone3)) {
+  const value =phone3[key];
+  console.log(key+ ":",value);
+};
+// output - brand: Samsumg
+// model: S21
+// price: 85000
+
+//----5
+
+const bike ={
+  brand: "Hero",
+  price: 120000,
+  model: "splender",
+}
+console.log(Object.values(bike));
+
+//----6
+const  books2 = {
+  book1:"Harry potter",
+  book2:"The Hobbit",
+  book3:"Game of Thrones",
+};
+for (const key of Object.values(books2)){
+  console.log(key);
+};
+
+
+//----7
+const num = {
+  a:10,
+  b:20,
+  c:30,
+  d:40,
+};
+let sum = 0;
+for (const key in num){
+  sum += num[key];
+
+}   console.log("Total sum:" ,sum);
+
+//output - Total sum: 100
+
+//----8
+const player1 = {
+  name: "Messi",
+  team: "Argentina",
+  goals: 91,
+}
+console.log(Object.values(player1));
+
+
+//----8
+const bulding = {
+  floors : 10,
+  address : "Main Road,Dhaka",
+  city : "Dhaka",
+  Type : "Commercial"
+}
+
+for (key in bulding){
+const value = bulding[key];
+console.log(key+ ":",value);
+}
+// output - floors: 10
+// address: Main Road,Dhaka
+// city: Dhaka
+// Type: Commercial

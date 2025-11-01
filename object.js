@@ -234,10 +234,10 @@ console.log(sumOfAge); //124
 
 //Object - Key & Values
 //----1
-const book ={
-  name : "Recharge Youre Down Battery",
-  writer : "Jhankar Mahbub",
-  price : "250TK",
+const book = {
+  name: "Recharge Youre Down Battery",
+  writer: "Jhankar Mahbub",
+  price: "250TK",
 };
 
 const bookkeys = Object.keys(book);
@@ -252,73 +252,72 @@ console.log(bookValues);
 //----2
 const articale = {
   title: "Learning JS",
-  category : "Programing",
+  category: "Programing",
 };
 
-if ( "auther" in articale) {
+if ("auther" in articale) {
   console.log("auther exists");
 } else {
   console.log("No auther Founded");
-};
+}
 
 //----3
 const Laputa = {
   brand: "dell",
   model: "Inspiron",
-  price : 45000,
-}
-for (const key in Laputa) {
-  const value = Laputa[key]
-  console.log(key,value);
+  price: 45000,
 };
+for (const key in Laputa) {
+  const value = Laputa[key];
+  console.log(key, value);
+}
 
 //----4
 const phone3 = {
-  brand : "Samsumg",
+  brand: "Samsumg",
   model: "S21",
   price: 85000,
 };
 
 for (const key of Object.keys(phone3)) {
-  const value =phone3[key];
-  console.log(key+ ":",value);
-};
+  const value = phone3[key];
+  console.log(key + ":", value);
+}
 // output - brand: Samsumg
 // model: S21
 // price: 85000
 
 //----5
 
-const bike ={
+const bike = {
   brand: "Hero",
   price: 120000,
   model: "splender",
-}
+};
 console.log(Object.values(bike));
 
 //----6
-const  books2 = {
-  book1:"Harry potter",
-  book2:"The Hobbit",
-  book3:"Game of Thrones",
+const books2 = {
+  book1: "Harry potter",
+  book2: "The Hobbit",
+  book3: "Game of Thrones",
 };
-for (const key of Object.values(books2)){
+for (const key of Object.values(books2)) {
   console.log(key);
-};
-
+}
 
 //----7
 const num = {
-  a:10,
-  b:20,
-  c:30,
-  d:40,
+  a: 10,
+  b: 20,
+  c: 30,
+  d: 40,
 };
 let sum = 0;
-for (const key in num){
+for (const key in num) {
   sum += num[key];
-
-}   console.log("Total sum:" ,sum);
+}
+console.log("Total sum:", sum);
 
 //output - Total sum: 100
 
@@ -327,23 +326,116 @@ const player1 = {
   name: "Messi",
   team: "Argentina",
   goals: 91,
-}
+};
 console.log(Object.values(player1));
-
 
 //----8
 const bulding = {
-  floors : 10,
-  address : "Main Road,Dhaka",
-  city : "Dhaka",
-  Type : "Commercial"
-}
+  floors: 10,
+  address: "Main Road,Dhaka",
+  city: "Dhaka",
+  Type: "Commercial",
+};
 
-for (key in bulding){
-const value = bulding[key];
-console.log(key+ ":",value);
+for (key in bulding) {
+  const value = bulding[key];
+  console.log(key + ":", value);
 }
 // output - floors: 10
 // address: Main Road,Dhaka
 // city: Dhaka
 // Type: Commercial
+
+//we can delete object and object key by using "Dlete" then object name/ object key
+
+const persona = {
+  name: "alice",
+  age: 25,
+  country: "UK",
+};
+
+delete persona.age;
+console.log(persona);
+
+//we can seal object for delatetion it can be only modfied useing "seal"
+const user = {
+  username: "johndoe",
+  email: "john.doe@example.com",
+  password: "oldpassword",
+};
+
+Object.seal(user);
+
+// Attempt to modify the object
+user.password = "newpassword"; // Allowed
+user.age = 30; // adding new property is not allowed
+user.email = "john.doe@newmail.com"; // deleting property is not allowed
+console.log(user);
+
+// Output: {username: 'johndoe', email: 'john.doe@example.com', password: 'newpassword'}
+
+//P1
+
+const headphone = {
+  brand: "Sony",
+  price: 3000,
+  color: "Red",
+};
+Object.freeze(headphone);
+headphone.brand = "Lenovo";
+console.log(headphone);
+//Here i wanted to modify the value but its freezed
+
+//p2
+const player3 = {
+  name: "Messi",
+  goals: 800,
+  club: "inter Miami",
+};
+Object.freeze(player3);
+player3.country = "Argentina";
+console.log(player3);
+//here i want to add new property but its not taking any new proprty becasuse its freezed.
+
+//p3
+const book6 = {
+  title: "harry Potter",
+  auther: "jK Rowling",
+  pages: 500,
+};
+Object.seal(book6);
+book6.auther = "Rowling";
+console.log(book6);
+//output:- { title: 'harry Potter', auther: 'Rowling', pages: 500 }
+
+//p4
+const gadget = {
+  name: "Iphone",
+  price: 12000,
+  color: "Black",
+};
+delete gadget.price;
+console.log(gadget);
+//output:- { name: 'Iphone', color: 'Black' }
+
+//P5
+const animal = {
+  name: "Tiger",
+  location: "Sundarban",
+};
+Object.freeze(animal.location);
+animal.name = "Crocodile";
+console.log(animal);
+//Output: - { name: 'Crocodile', location: 'Sundarban' } - here i only freezed location property .
+
+//p6
+const food2 = {
+  name: "Pizza",
+  price: 500,
+  size: "learge",
+};
+Object.seal(food2);
+food2.price = 600;
+food2.extraAdd = "chess";
+console.log(food2);
+//Output: - { name: 'Pizza', price: 600, size: 'learge' } here now i can just modify the proprty value but can't add or remove .

@@ -154,3 +154,6 @@ function mobileUsagesMonthly(daily){
   console.log("You use mobile ",mobUseinmonth,"hours in a month");
 };
 mobileUsagesMonthly(5);
+//OUTPUT:- You use mobile  150 hours in a month
+
+
